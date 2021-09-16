@@ -5,7 +5,7 @@ const appRoot = require("app-root-path");
 const { simpanBarang } = require(appRoot +
     "/services/v1/barang/barang.service");
 
-router.post("/v1/barang", simpanBarang);
+router.post("/api/v1/barang", simpanBarang);
 
 module.exports = {
     BarangRouter: router
