@@ -6,6 +6,7 @@ const app = express();
 const { logger } = require("./config/logger");
 const { sequelize } = require("./config/database");
 const { BarangRouter } = require("./routers/barang.router");
+const { CacheRouter } = require("./routers/cache.router");
 
 /* application/json */
 app.use(express.json());
@@ -26,6 +27,7 @@ sequelize
         logger.error("Unable to connect to the database:", err);
     });
 
+app.use(CacheRouter);
 app.use(BarangRouter);
 
 const port = process.env.PORT || 8080;

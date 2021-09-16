@@ -9,5 +9,9 @@ module.exports = {
             return false;
         }
         return true;
+    },
+    flushAll: () => {
+        cache.flushAll();
+        cache.getStats();
     }
 };
