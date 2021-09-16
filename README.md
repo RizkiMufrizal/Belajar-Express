@@ -24,12 +24,12 @@
 
 -   [ ] validation
 -   [x] ORM with database
--   [ ] Caching
+-   [x] Caching
 -   [x] Logging
 -   [ ] Log to ELK
 -   [ ] Audit Log
 -   [x] Docker Support
 -   [ ] Automated Test
 -   [ ] Mock REST API Automated Test
--   [ ] Http Client
+-   [x] Http Client
 -   [ ] Scheduler

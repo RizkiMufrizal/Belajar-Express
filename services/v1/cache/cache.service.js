@@ -6,6 +6,7 @@ const { flushAll } = require(appRoot + "/config/cache");
 module.exports = {
     clearAllCache: (request, response) => {
         flushAll();
+        logger.info("clear all cache success");
         const message = {
             Success: true,
             Message: "Success Clear All Cache"
