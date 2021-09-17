@@ -33,4 +33,4 @@
 -   [ ] Automated Test
 -   [ ] Mock REST API Automated Test
 -   [x] Http Client
--   [ ] Scheduler
+-   [x] Scheduler
