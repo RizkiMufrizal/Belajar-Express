@@ -11,18 +11,19 @@
 1. core framework => express
 2. dotenv => config parameter
 3. sequelize => ORM
-4. postgresql => database
-5. log4js => logging
-6. log4js-node/logstashudp => logging to elk
-7. node-cache => cache
-8. Automated Test => Jest
-9. Automated REST API Test => supertest
-10. Http Client => axios
-11. Scheduler => node cron
+4. joi => validation request
+5. postgresql => database
+6. log4js => logging
+7. log4js-node/logstashudp => logging to elk
+8. node-cache => cache
+9. Automated Test => Jest
+10. Automated REST API Test => supertest
+11. Http Client => axios
+12. Scheduler => node cron
 
 ## Task
 
--   [ ] validation
+-   [x] validation
 -   [x] ORM with database
 -   [x] Caching
 -   [x] Logging
