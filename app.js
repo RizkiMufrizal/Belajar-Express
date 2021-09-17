@@ -8,6 +8,7 @@ const { sequelize } = require("./config/database");
 const { BarangRouter } = require("./routers/barang.router");
 const { CacheRouter } = require("./routers/cache.router");
 const { HttpBinRouter } = require("./routers/httpbin.router");
+const { HelloWorldRouter } = require("./routers/helloworld.router");
 
 /* application/json */
 app.use(express.json());
@@ -31,6 +32,7 @@ sequelize
 app.use(CacheRouter);
 app.use(BarangRouter);
 app.use(HttpBinRouter);
+app.use(HelloWorldRouter);
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => {

@@ -1,15 +1,13 @@
 const appRoot = require("app-root-path");
 
 const { logger } = require(appRoot + "/config/logger");
-const { flushAll } = require(appRoot + "/config/cache");
 
 module.exports = {
-    clearAllCache: (request, response) => {
-        flushAll();
-        logger.info("clear all cache success");
+    showHelloWorld: (request, response) => {
+        logger.info("Hello World Version v1");
         const message = {
             Success: true,
-            Message: "Success Clear All Cache"
+            Message: "Hello World"
         };
         return response.status(200).json(message);
     }

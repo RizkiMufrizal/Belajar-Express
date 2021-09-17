@@ -5,18 +5,17 @@ const appRoot = require("app-root-path");
 const SchemaValidation = require(appRoot + "/middleware/schema.validation");
 const { simpanBarangSchema, ambilBarangSchema } = require(appRoot +
     "/schemas/barang.schema");
-const { simpanBarang, ambilBarang } = require(appRoot +
-    "/services/v1/barang/barang.service");
+const barangServiceV1 = require(appRoot + "/services/v1/barang/barang.service");
 
 router.post(
     "/api/v1/barang",
     SchemaValidation(simpanBarangSchema(), "body"),
-    simpanBarang
+    barangServiceV1.simpanBarang
 );
 router.get(
     "/api/v1/barang",
     SchemaValidation(ambilBarangSchema(), "query"),
-    ambilBarang
+    barangServiceV1.ambilBarang
 );
 
 module.exports = {
