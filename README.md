@@ -27,7 +27,7 @@
 -   [x] ORM with database
 -   [x] Caching
 -   [x] Logging
--   [ ] Log to ELK
+-   [x] Log to ELK
 -   [ ] Audit Log
 -   [x] Docker Support
 -   [ ] Automated Test
