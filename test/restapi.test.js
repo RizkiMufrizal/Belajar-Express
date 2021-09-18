@@ -2,10 +2,26 @@ const request = require("supertest");
 const axios = require("axios");
 const appRoot = require("app-root-path");
 
-const app = require(appRoot + "/app");
+const app = require("./app.test");
 const { sequelize } = require(appRoot + "/config/database");
 
 jest.mock("axios");
+
+beforeAll(async () => {
+    await require(appRoot + "/consumer")();
+
+    await sequelize
+        .authenticate()
+        .then(() => {
+            console.log(
+                "Connection Database has been established successfully."
+            );
+            sequelize.sync();
+        })
+        .catch((err) => {
+            console.log("Unable to connect to the database:", err);
+        });
+});
 
 describe("GET /api/v1/httpbin", () => {
     it("return httpbin response and code 200", async () => {

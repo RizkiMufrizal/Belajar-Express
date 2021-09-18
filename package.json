@@ -3,8 +3,16 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
+    "jest": {
+        "verbose": true,
+        "testPathIgnorePatterns": [
+            "/node_modules/",
+            "app.test.js"
+        ]
+    },
     "scripts": {
-        "test": "jest --verbose",
+        "test": "jest",
+        "jest": "jest --detectOpenHandles",
         "start": "nodemon server.js"
     },
     "repository": {
