@@ -3,7 +3,7 @@
 ## Run App
 
 1. npm install
-2. node app.js
+2. npm start
 3. access http://localhost:3000/api/v1/hello and http://localhost:3000/api/v2/hello
 
 ## Library
@@ -31,8 +31,8 @@
 -   [x] Log to ELK
 -   [ ] Audit Log
 -   [x] Docker Support
--   [ ] Automated Test
--   [ ] Mock REST API Automated Test
+-   [x] Automated Test
+-   [x] Mock REST API Automated Test
 -   [x] Http Client
 -   [x] Scheduler
 -   [x] Message Broker

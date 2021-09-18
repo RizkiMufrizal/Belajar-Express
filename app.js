@@ -1,6 +1,5 @@
 require("dotenv").config();
 const express = require("express");
-const os = require("os");
 const app = express();
 
 /* load module */
@@ -51,7 +50,4 @@ app.use(BarangRouter);
 app.use(HttpBinRouter);
 app.use(HelloWorldRouter);
 
-const port = process.env.PORT || 8080;
-app.listen(port, () => {
-    logger.info(`app listening at http://${os.hostname()}:${port}`);
-});
+module.exports = app;
