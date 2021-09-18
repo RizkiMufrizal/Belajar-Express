@@ -3,6 +3,7 @@ const appRoot = require("app-root-path");
 const { logger } = require(appRoot + "/config/logger");
 const { cache, isExis } = require(appRoot + "/config/cache");
 const { Barang } = require(appRoot + "/models/barang");
+const { producer } = require(appRoot + "/config/kafka");
 
 module.exports = {
     simpanBarang: async (request, response) => {
@@ -27,6 +28,8 @@ module.exports = {
             cache.set("barang", barangs);
             logger.info("cache not exist");
         }
+
+        producer("test-topic", [{ value: "Hello World" }]);
 
         const message = {
             Success: true,

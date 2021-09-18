@@ -20,6 +20,7 @@
 10. Automated REST API Test => supertest
 11. Http Client => axios
 12. Scheduler => node cron
+13. Broker => KafkaJS
 
 ## Task
 
@@ -34,3 +35,5 @@
 -   [ ] Mock REST API Automated Test
 -   [x] Http Client
 -   [x] Scheduler
+-   [x] Message Broker
+-   [ ] table relations

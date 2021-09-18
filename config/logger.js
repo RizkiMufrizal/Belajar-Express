@@ -32,5 +32,5 @@ log4js.configure({
 });
 
 module.exports = {
-    logger: log4js.getLogger("default")
+    logger: log4js.getLogger("non_logstash")
 };

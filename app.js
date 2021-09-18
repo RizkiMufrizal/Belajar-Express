@@ -5,6 +5,7 @@ const app = express();
 
 /* load module */
 require("./schedulers")();
+require("./consumer")();
 /* load module */
 
 /* config */
