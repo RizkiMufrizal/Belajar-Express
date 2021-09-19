@@ -29,11 +29,10 @@
 -   [x] Caching
 -   [x] Logging
 -   [x] Log to ELK
--   [ ] Audit Log
 -   [x] Docker Support
 -   [x] Automated Test
 -   [x] Mock REST API Automated Test
 -   [x] Http Client
 -   [x] Scheduler
 -   [x] Message Broker
--   [ ] table relations
+-   [x] table relations

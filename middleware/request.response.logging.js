@@ -6,8 +6,8 @@ const { logger } = require(appRoot + "/config/logger");
 
 const middleware = () => {
     return (request, response, next) => {
-        logger.info(request.body);
-        logger.info(response.body);
+        // logger.info(request.body);
+        // logger.info(response.body);
         next();
     };
 };
